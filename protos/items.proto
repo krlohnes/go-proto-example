@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "protos/snazzy/items";
+
+package snazzy.items;
+
+// A snazzy new shirt!
+message Shirt {
+    enum Size {
+        SMALL = 0;
+        MEDIUM = 1;
+        LARGE = 2;
+    }
+
+    string color = 1;
+    Size size = 2;
+}
